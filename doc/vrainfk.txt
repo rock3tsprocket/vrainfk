@@ -1,7 +1,7 @@
 *vrainfk.txt* Brainf**k interpreter for Vim
 
 ====================================================================
-CONTENTS                                               *VrainfkContents*
+CONTENTS                                           *VrainfkContents*
 
     1. Usage ................ |VrainfkUsage|
     2. License .............. |VrainfkLicense|
@@ -10,38 +10,40 @@ CONTENTS                                               *VrainfkContents*
     5. Changelog ............ |VrainfkChangelog|
 
 ====================================================================
-Section 1: Usage                                       *VrainfkUsage*
+1. Usage                                              *VrainfkUsage*
 
 This plugin includes a Brainf**k interpreter. It can be called with:
 	:Vrainfk "[Insert Brainf**k code]"
 
-For example:
-	:Vrainfk "+++++++++++[>++++++>+++++++++>++++++++>++++>+++>+<<<<<<-]>++++++.>++.+++++++..+++.>>.>-.<<-.<.+++.------.--------.>>>+.>-." " Prints "Hello, world!"
+For example, to print the letter "h":
+	:Vrainfk "--[>+<--]>>+++++++++++[<-->-]<-."
 
 ====================================================================
-Section 2: License                                     *VrainfkLicense*
+2. License                                          *VrainfkLicense*
 
 Vrainfk is licensed under the BSD-3-Clause license.
 
 ====================================================================
-Section 3: Bugs                                        *VrainfkBugs*
+3. Bugs                                                *VrainfkBugs*
 
 You can report bugs at https://github.com/rock3tsprocket/vrainfk.
 
 Known bugs that I can't be bothered to fix:
-- It is only possible to provide one line of code as input. Shouldn't be a
-problem though since Brainf**k programs are freeform.
+- It is only possible to provide one line of code as input.
+Shouldn't be a problem though since Brainf**k programs are freeform.
 
 - The "." command prints characters on separate lines.
 
 ====================================================================
-Section 4: Contributing                                *VrainfkContributing*
+4. Contributing                                *VrainfkContributing*
 
 You can contribute at https://github.com/rock3tsprocket/vrainfk.
 
 ====================================================================
-Section 5: Changelog                                   *VrainfkChangelog*
+5. Changelog                                      *VrainfkChangelog*
 
 1.0: Initial release
 1.0.1: Made "." command not echo to messages
 1.1: Made it a command
+
+" vim: set tw=69 ts=8 ft=help
