@@ -34,7 +34,7 @@ function Brainfk(code)
 				let cells[dp]+=256
 			endif
 		elseif a:code[ip] ==# "."
-			echom nr2char(cells[dp])
+			echo nr2char(cells[dp])
 		elseif a:code[ip] ==# ","
 			let cells[dp] = char2nr(input("Input: "))
 			echo "\n"

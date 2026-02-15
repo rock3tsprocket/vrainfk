@@ -43,3 +43,4 @@ You can contribute at https://github.com/rock3tsprocket/vrainfk.
 Section 5: Changelog                                   *VrainfkChangelog*
 
 1.0: Initial release
+1.0.1: Made "." command not echo to messages
