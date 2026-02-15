@@ -51,3 +51,5 @@ function Brainfk(code)
 		let ip = ip + 1
 	endwhile
 endfunction
+
+command! -nargs=1 Vrainfk call Brainfk(<args>)

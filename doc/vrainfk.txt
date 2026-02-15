@@ -13,10 +13,10 @@ CONTENTS                                               *VrainfkContents*
 Section 1: Usage                                       *VrainfkUsage*
 
 This plugin includes a Brainf**k interpreter. It can be called with:
-	:call Vrainfk([Insert Brainf**k code])
+	:Vrainfk "[Insert Brainf**k code]"
 
 For example:
-	:call Brainfk("+++++++++++[>++++++>+++++++++>++++++++>++++>+++>+<<<<<<-]>++++++.>++.+++++++..+++.>>.>-.<<-.<.+++.------.--------.>>>+.>-.") " Prints "Hello, world!"
+	:Vrainfk "+++++++++++[>++++++>+++++++++>++++++++>++++>+++>+<<<<<<-]>++++++.>++.+++++++..+++.>>.>-.<<-.<.+++.------.--------.>>>+.>-." " Prints "Hello, world!"
 
 ====================================================================
 Section 2: License                                     *VrainfkLicense*
@@ -44,3 +44,4 @@ Section 5: Changelog                                   *VrainfkChangelog*
 
 1.0: Initial release
 1.0.1: Made "." command not echo to messages
+1.1: Made it a command
