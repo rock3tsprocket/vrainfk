@@ -1,9 +1,9 @@
 function Brainfk(...)
     " Get the Brainf**k code from the optional function argument
-    let code = get(a:, 1, 0)
+    let code = get(a:, 1, 1)
     " If `code` equals 0, then there was no argument, so read the code from
     " the buffer
-    if code == 0
+    if code == 1
         let code = join(getline(1, '$'), "\n")
     endif
 
