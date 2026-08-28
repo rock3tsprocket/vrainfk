@@ -12,10 +12,14 @@ CONTENTS                                           *VrainfkContents*
 ====================================================================
 1. Usage                                              *VrainfkUsage*
 
-This plugin includes a Brainf**k interpreter. It can be called with:
+ This plugin includes a Brainf**k interpreter. It can be called with
+either no arguments to execute code from the current buffer:
+    :Vrainfk
+
+or by passing Brainf**k code to it as an argument:
 	:Vrainfk "[Insert Brainf**k code]"
 
-For example, to print the letter "h":
+For example, to print the letter 'h':
 	:Vrainfk "--[>+<--]>>+++++++++++[<-->-]<-."
 
 ====================================================================
@@ -28,10 +32,6 @@ Vrainfk is licensed under the BSD-3-Clause license.
 
 You can report bugs at https://github.com/rock3tsprocket/vrainfk.
 
-Known bugs that I can't be bothered to fix:
-- It is only possible to provide one line of code as input.
-Shouldn't be a problem though since Brainf**k programs are freeform.
-
 ====================================================================
 4. Contributing                                *VrainfkContributing*
 
@@ -40,9 +40,10 @@ You can contribute at https://github.com/rock3tsprocket/vrainfk.
 ====================================================================
 5. Changelog                                      *VrainfkChangelog*
 
+1.3: Added the ability to execute code from the current buffer
 1.2: Restructured changelog a bit and replaced echo with echon
 1.1: Made it a command
-1.0.1: Made "." command not echo to messages
+1.0.1: Made '.' command not echo to messages
 1.0: Initial release
 
 " vim: set tw=69 ts=8 ft=help
